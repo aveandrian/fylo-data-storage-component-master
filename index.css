@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: url('./images/bg-desktop.png'), hsl(229, 57%, 11%);
+    background-repeat: no-repeat;
+    background-position: bottom left, center center;
+    background-size: 100% 50%, contain;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    align-items: end;
+    gap: 1.25rem;
+}
+
+h1, p {
+    font-size: 0.875rem ;
+}
+
+.title-section, .progress-div {
+    background-color: hsl(228, 56%, 26%);
+}
+
+.title-section {
+    padding: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 350px;
+    border-radius: 0.625rem 4.375rem 0.625rem 0.625rem;
+}
+
+.logo {
+    width: 60%;
+}
+
+.icons-div {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+.icons-div > img {
+    width: 3.125rem;
+    height: 3.125rem;
+    object-fit: contain;
+    background-color: black;
+    padding: 0.625rem;
+    border-radius: 0.313rem;
+}
+
+.progress-div {
+    padding: 2.5rem;
+    border-radius: 0.625rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1.25rem;;
+}
+
+.progress-title {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.progressbar-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.main-progress {
+    height: 1.25rem;
+    width: 500px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 0.625rem;
+    padding: 0.125rem;
+    display: flex;
+    align-items: center;
+}
+
+.filled-back {
+    border-radius: 0.625rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    padding: 0.313rem;;
+    background-image: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%)
+    );
+}
+
+.white-circle {
+    background-color: white;
+    padding: 0.125rem;
+    width: 0.625rem;
+    height: 0.625rem;;
+    border-radius: 50%;
+}
+
+.values-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-container {
+    position: absolute;
+    top: -30%;
+    right: 3.125rem;
+    padding: 1.25rem;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    border-radius: 0.625rem 0.625rem 0 0.625rem;
+}
+
+.left-number {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.left-container::after {
+    content: "";
+    position: absolute;
+    top: 99%;
+    right: 0%;
+    margin-left: -0.313rem;
+    border-width: 0.625rem;
+    border-style: solid;
+    border-color: white white transparent transparent;
+}
+
+footer, footer > a {
+    margin-top: 2.5rem;
+    color: white;
+    font-size: 0.875rem;
+}
+
+@media screen and (max-width: 1100px) {
+    body {
+        padding: 0.625rem;
+        background: url('./images/bg-mobile.png');
+    }
+    main, .title-section, .progress-div {
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+    .main-progress {
+        width: 100%;
+    }
+
+    .left-container::after {
+        display: none;
+    }
+
+    .left-container {
+        top: 80%;
+        right: 35%;
+        border-radius: 0.625rem;
+        padding: 0.625rem;
+    }
+}   
