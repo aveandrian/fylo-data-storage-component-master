@@ -157,6 +157,8 @@ footer, footer > a {
     body {
         padding: 0.625rem;
         background: url('./images/bg-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     main, .title-section, .progress-div {
         width: 100%;
