@@ -18,4 +18,4 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image](https://github.com/aveandrian/fylo-data-storage-component-master/assets/13519212/4fb4db75-fc5d-415b-a01b-9ee807902108)
